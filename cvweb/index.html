@@ -5,7 +5,8 @@
     $formcontent="From: $name \n Message: $message";
     $recipient = "chioranionutcatalin@gmail.com";
     $subject = "Contact Form";
-    $mailheader = "From: $email \r\n";
+	$mailheader = "From: $email \r\n";
+	die($mailheader);
     mail($recipient, $subject, $formcontent, $mailheader);
 ?>
 
